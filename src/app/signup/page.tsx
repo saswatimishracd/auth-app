@@ -1,11 +1,11 @@
 "use client";
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React,{useState,useEffect} from 'react';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import Link from 'next/link';
 import toast from 'react-hot-toast';
-import { log } from 'node:console';
+
 
 export default function SignupPage(){
     const router = useRouter();

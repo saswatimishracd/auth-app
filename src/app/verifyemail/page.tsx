@@ -2,7 +2,7 @@
 import axios from "axios";
 import Link from "next/link";
 import React,{ useState,useEffect } from "react";
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function VerifyEmailPage() {
   const [token, setToken] = useState("");
   const [verified, setVerified] = useState(false);
@@ -20,7 +20,7 @@ export default function VerifyEmailPage() {
   useEffect(() => {
    const urlToken = window.location.search.split('=')[1];
    setToken(urlToken || '');
-  }, [])
+  })
   
   useEffect(()=>{
     if(token.length>0){

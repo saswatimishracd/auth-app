@@ -2,9 +2,8 @@ import connect from '@/dbConfig/dbConfig'
 import User from '@/models/userModel'
 import { NextRequest,NextResponse } from 'next/server'
 import bcryptjs from 'bcryptjs'
-import { log } from 'node:console'
 import jwt from 'jsonwebtoken'
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 connect()
 
 export async function POST(request:NextRequest){

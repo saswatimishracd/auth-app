@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export async function GET(){
     try {
         const response = NextResponse.json({

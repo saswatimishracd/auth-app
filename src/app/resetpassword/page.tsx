@@ -3,9 +3,9 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
-
-const resetPasswordPage = () => {
+const ResetPasswordPage = () => {
 const router = useRouter();
 const [token, setToken] = useState("");
 const [password, setPassword] = useState("");
@@ -60,4 +60,4 @@ function handleChange(e:any){
   )
 }
 
-export default resetPasswordPage;
+export default ResetPasswordPage;

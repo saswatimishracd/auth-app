@@ -3,16 +3,16 @@ import React,{useState} from 'react'
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
-
-const forgotPasswordPage = () => {
+const ForgotPasswordPage = () => {
     const [email, setEmail] = useState("");
     function handleChange(e:any){
         setEmail(e.target.value);
     }
     const resetPassword = async () => {
         try {
-            const response = await axios.post("/api/users/forgot-password", { email });
+           await axios.post("/api/users/forgot-password", { email });
         } catch (error:any) {
             console.log("Error in sending reset password email", error.message);
              toast.error("Failed to send reset password email");
@@ -28,5 +28,5 @@ const forgotPasswordPage = () => {
     </div>
   )
 }
-export default forgotPasswordPage
+export default ForgotPasswordPage
 

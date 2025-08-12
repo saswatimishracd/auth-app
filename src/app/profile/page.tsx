@@ -2,10 +2,9 @@
 import axios from 'axios';
 import React,{useState} from 'react'
 import Link from 'next/link';
-import { log } from 'console';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function ProfilePage() {
   const router = useRouter();
   const [data,setData] = useState('nothing');

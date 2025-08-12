@@ -3,7 +3,7 @@ import User from '@/models/userModel'
 import { NextRequest,NextResponse } from 'next/server'
 import bcryptjs from 'bcryptjs'
 import { sendMail } from '@/helpers/mailer'
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 connect()
 
 export async function POST(request:NextRequest){
